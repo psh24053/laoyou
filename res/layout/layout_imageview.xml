@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000" 
+    android:orientation="vertical" >
+    
+    
+    <ImageView 
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:layout_gravity="center"
+        />
+    
+    <FrameLayout 
+		android:id="@+id/progress_framelayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="center"
+		android:background="#70000000"     
+		android:visibility="gone" 
+        >
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:layout_gravity="center"
+             />
+        
+    </FrameLayout>
+    
+    <LinearLayout 
+        android:id="@+id/header_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:background="#10ffffff"
+        >
+        <ImageView 
+            android:id="@+id/header_buttons_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_revert"
+            android:padding="5dp"
+            />
+        
+    </LinearLayout>
+    
+    
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+{
+	"ConfigVersion" : 1,  // 必须
+	"DynamicConfig" : "FindFine_Dynamic_Config",  // 必须
+	"ConfigContent" : {   // 必须
+		"DataServlet" : "http://192.168.0.118:8080/FindFine/Main", //数据Servlet地址
+		"CheckVersionServlet" : "http://192.168.0.118:8080/FindFine/CheckVersion", //检查版本信息
+		"ApkName" : "findfine.apk",  //更新时的apk文件名称
+		"ServerPath" : "http://192.168.0.118:8080/FindFine/", //服务器路径
+		"GetFilePath" : "http://192.168.0.118:8080/FindFine/GetFile", //GetFile的路径
+		"UploadFilePath" : "http://192.168.0.118:8080/FindFine/UploadFile" //UploadFile的路径
+	}
+}
